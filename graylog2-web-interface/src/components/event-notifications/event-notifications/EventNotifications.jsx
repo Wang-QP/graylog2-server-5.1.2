@@ -140,7 +140,7 @@ class EventNotifications extends React.Component {
         </LinkContainer>
         <ShareButton entityType="notification" entityId={notification.id} onClick={() => setNotificationToShare(notification)} />
         <IfPermitted permissions={[`eventnotifications:edit:${notification.id}`, `eventnotifications:delete:${notification.id}`]} anyPermissions>
-          <DropdownButton id={`more-dropdown-${notification.id}`} title="More" pullRight>
+          <DropdownButton id={`more-dropdown-${notification.id}`} title="更多" pullRight>
             <IfPermitted permissions={`eventnotifications:edit:${notification.id}`}>
               <MenuItem disabled={isTestLoading} onClick={onTest(notification)}>
                 {isTestLoading ? 'Testing...' : 'Test Notification'}

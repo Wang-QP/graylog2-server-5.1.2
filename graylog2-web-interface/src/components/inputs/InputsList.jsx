@@ -188,16 +188,16 @@ const InputsList = createReactClass({
             <SearchForm onSearch={this._onFilterInputs}
                         topMargin={0}
                         onReset={this._onFilterReset}
-                        placeholder="Filter by title" />
+                        placeholder="按标题筛选" />
             <br />
             <h2>
-              Global inputs
+              全局输入
               &nbsp;
-              <small>{this.state.globalInputs.length} configured{this._nodeAffix()}</small>
+              <small>{this.state.globalInputs.length} 配置{this._nodeAffix()}</small>
             </h2>
             <EntityList bsNoItemsStyle="info"
-                        noItemsText={this.state.globalInputs.length <= 0 ? 'There are no global inputs.'
-                          : 'No global inputs match the filter'}
+                        noItemsText={this.state.globalInputs.length <= 0 ? '没有全局性的输入。'
+                          : '没有匹配过滤器的全局输入'}
                         items={this.state.filteredGlobalInputs.map((input) => (
                           <InputListItem key={input.id}
                                          input={input}
@@ -207,13 +207,13 @@ const InputsList = createReactClass({
             <br />
             <br />
             <h2>
-              Local inputs
+              本地输入
               &nbsp;
-              <small>{this.state.localInputs.length} configured{this._nodeAffix()}</small>
+              <small>{this.state.localInputs.length} 配置{this._nodeAffix()}</small>
             </h2>
             <EntityList bsNoItemsStyle="info"
-                        noItemsText={this.state.localInputs.length <= 0 ? 'There are no local inputs.'
-                          : 'No local inputs match the filter'}
+                        noItemsText={this.state.localInputs.length <= 0 ? '没有本地输入。'
+                          : '没有匹配过滤器的本地输入'}
                         items={this.state.filteredLocalInputs.map((input) => (
                           <InputListItem key={input.id}
                                          input={input}

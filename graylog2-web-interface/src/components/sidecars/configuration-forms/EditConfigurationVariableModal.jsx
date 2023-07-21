@@ -189,7 +189,7 @@ class EditConfigurationVariableModal extends React.Component {
                    required />
             <Input type="text"
                    id={this._getId('variable-description')}
-                   label={<span>Description <small className="text-muted">(Optional)</small></span>}
+                   label={<span>描述 <small className="text-muted">(Optional)</small></span>}
                    name="description"
                    defaultValue={formData.description}
                    onChange={this._handleInputChange}

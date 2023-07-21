@@ -249,7 +249,7 @@ const AdaptableQueryTabs = ({ maxWidth, queries, titles, activeQueryId, onRemove
     let queriesList = OrderedSet<{ id: string, title: string }>();
 
     queries.keySeq().forEach((id, idx) => {
-      const title = titles.get(id, `Page#${idx + 1}`);
+      const title = titles.get(id, `第${idx + 1}页`);
       const tabTitle = (
         <QueryTitle active={id === activeQueryId}
                     id={id}

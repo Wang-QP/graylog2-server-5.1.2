@@ -53,13 +53,13 @@ const ServerInputSelect = ({ selectedInputId, inputs, onChange, isLoading }: Ser
     <fieldset>
       <Description>
         {selectedInputId
-          ? 'Click on "Load Message" to load the most recent message received by this input within the last hour.'
-          : 'Select an Input from the list below and click "Load Message" to load the most recent message received by this input within the last hour.'}
+          ? '点击“加载消息”来加载这个输入在最近一小时内收到的最新消息。'
+          : '从下面的列表中选择一个输入，然后单击“加载消息”来加载该输入在最近一小时内收到的最新消息。'}
       </Description>
       <InputDropdown inputs={inputs}
                      preselectedInputId={selectedInputId}
                      onLoadMessage={onChange}
-                     title={isLoading ? 'Loading message...' : 'Load Message'}
+                     title={isLoading ? '加载消息中...' : '加载消息'}
                      disabled={isLoading} />
     </fieldset>
   );

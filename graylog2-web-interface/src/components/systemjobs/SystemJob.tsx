@@ -116,7 +116,7 @@ const SystemJob = ({ job }) => {
         <RelativeTime dateTime={job.started_at} />{' '}
         <StatusBadge status={mappedJobStatus}>{mappedJobStatus}</StatusBadge>
         {!jobIsOver && job.is_cancelable
-          ? (<Button type="button" bsSize="xs" bsStyle="primary" className="pull-right" onClick={_onCancel()}>Cancel</Button>)
+          ? (<Button type="button" bsSize="xs" bsStyle="primary" className="pull-right" onClick={_onCancel()}>取消</Button>)
           : (<AcknowledgeButton type="button" bsStyle="link" onClick={_onAcknowledge()} bsSize="xs" className="pull-right" title="Acknowledge"><Icon name="x" /></AcknowledgeButton>)}
       </JobWrap>
 

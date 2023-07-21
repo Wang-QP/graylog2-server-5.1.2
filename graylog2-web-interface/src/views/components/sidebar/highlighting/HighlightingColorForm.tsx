@@ -56,7 +56,7 @@ const StaticColorPicker = () => (
     {({ field: { name, value, onChange }, meta }) => (
       <Input id={name}
              error={meta?.error}
-             label="Color">
+             label="颜色">
         <ColorPickerPopover id="formatting-rule-color"
                             placement="right"
                             color={value}
@@ -197,7 +197,7 @@ export const createNewColor = (newType: ColorType): StaticColorObject | Gradient
 
 export const validateColoringType = (value, fieldIsNumeric) => {
   if (!value || value === '') {
-    return 'Coloring is required';
+    return '着色是必填的';
   }
 
   if (!fieldIsNumeric && value === 'gradient') {
@@ -222,13 +222,13 @@ const HighlightingColorForm = ({ field }: Props) => {
       {({ field: { name, value }, meta }) => (
         <>
           <Input id={`${name}-coloring`}
-                 label="Coloring"
+                 label="着色"
                  error={meta?.error}>
             <Container>
               <Input checked={value === 'static'}
                      formGroupClassName=""
                      id={name}
-                     label="Static Color"
+                     label="静态颜色"
                      onChange={onChangeType}
                      type="radio"
                      value="static" />
@@ -236,7 +236,7 @@ const HighlightingColorForm = ({ field }: Props) => {
                      formGroupClassName=""
                      id={name}
                      disabled={!isNumeric}
-                     label="Gradient"
+                     label="渐变"
                      onChange={onChangeType}
                      type="radio"
                      value="gradient" />

@@ -76,7 +76,7 @@ const DashboardActionsMenu = () => {
     <>
       <MenuItem divider />
       <MenuItem onSelect={() => setDebugOpen(true)} icon="code">
-        Debug
+        调试
       </MenuItem>
     </>
   );
@@ -102,15 +102,15 @@ const DashboardActionsMenu = () => {
       {showSaveButton && (
         <Button onClick={_onSaveView}
                 disabled={isNewView || hasUndeclaredParameters || !allowedToEdit}
-                title="Save dashboard">
-          <Icon name="save" /> Save
+                title="保存仪表板">
+          <Icon name="save" /> 保存
         </Button>
       )}
       {showSaveNewButton && (
         <Button onClick={() => setSaveNewDashboardOpen(true)}
                 disabled={hasUndeclaredParameters}
-                title="Save as new dashboard">
-          <Icon name="copy" /> Save as
+                title="另存为新仪表板">
+          <Icon name="copy" /> 另存为
         </Button>
       )}
       {showShareButton && (
@@ -118,14 +118,14 @@ const DashboardActionsMenu = () => {
                      entityId={view.id}
                      onClick={() => setShareViewOpen(true)}
                      bsStyle="default"
-                     disabledInfo={isNewView && 'Only saved dashboards can be shared.'} />
+                     disabledInfo={isNewView && '只有保存的仪表板才能共享。'} />
       )}
       {showDropDownButton && (
-        <DropdownButton title={<Icon name="ellipsis-h" title="More Actions" />} id="query-tab-actions-dropdown" pullRight noCaret>
+        <DropdownButton title={<Icon name="ellipsis-h" title="更多操作" />} id="query-tab-actions-dropdown" pullRight noCaret>
           <MenuItem onSelect={() => setEditDashboardOpen(true)} disabled={isNewView || !allowedToEdit} icon="edit">
-            Edit metadata
+            编辑元数据
           </MenuItem>
-          <MenuItem onSelect={() => setExportOpen(true)} icon="cloud-download-alt">Export</MenuItem>
+          <MenuItem onSelect={() => setExportOpen(true)} icon="cloud-download-alt">导出</MenuItem>
           {debugOverlay}
           <MenuItem divider />
           <BigDisplayModeConfiguration view={view} disabled={isNewView} />

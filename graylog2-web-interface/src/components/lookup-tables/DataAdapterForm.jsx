@@ -334,7 +334,7 @@ class DataAdapterForm extends React.Component {
                 <Input type="text"
                        id="description"
                        name="description"
-                       label="Description"
+                       label="描述"
                        onChange={this._onChange}
                        help="Data adapter description."
                        value={dataAdapter.description}

@@ -78,7 +78,7 @@ const EventNotificationActions = ({ isTestLoading, notification, refetchEventNot
                      onClick={() => setShowShareNotification(notification)}
                      bsSize="xsmall" />
 
-        <OverlayDropdownButton title="More"
+        <OverlayDropdownButton title="更多"
                                bsSize="xsmall"
                                dropdownZIndex={1000}>
 

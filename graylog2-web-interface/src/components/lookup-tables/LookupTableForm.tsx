@@ -131,7 +131,7 @@ const LookupTableForm = ({ saved, create, table }: Props) => {
 
             <FormikFormGroup type="text"
                              name="description"
-                             label="Description"
+                             label="描述"
                              help="Description of the lookup table."
                              labelClassName="col-sm-3"
                              wrapperClassName="col-sm-9" />

@@ -45,7 +45,7 @@ const validateSorts = (values: WidgetConfigFormValues) => {
     const sortError: SortError = {};
 
     if (!sort.field || sort.field === '') {
-      sortError.field = 'Field is required.';
+      sortError.field = '字段是必填的。';
     }
 
     if (!sort.direction) {

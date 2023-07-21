@@ -51,7 +51,7 @@ type Props = {
 
 const _isRequired = (field) => (value: string) => {
   if (['', null, undefined].includes(value)) {
-    return `${field} is required`;
+    return `${field} 是必填的。`;
   }
 
   return undefined;
@@ -124,8 +124,8 @@ const HighlightForm = ({ onClose, rule }: Props) => {
     return dispatch(addHighlightingRule(HighlightingRule.create(field, value, condition, newColor))).then(onClose);
   }, [dispatch, onClose, rule]);
 
-  const headerPrefix = rule ? 'Edit' : 'Create';
-  const submitButtonPrefix = rule ? 'Update' : 'Create';
+  const headerPrefix = rule ? '编辑' : '创建';
+  const submitButtonPrefix = rule ? '更新' : '创建';
 
   return (
     <Formik onSubmit={onSubmit}
@@ -144,48 +144,48 @@ const HighlightForm = ({ onClose, rule }: Props) => {
           <BootstrapModalWrapper showModal
                                  onHide={onClose}
                                  data-app-section="sidebar_highlighting"
-                                 data-event-element={`${headerPrefix} Highlighting Rule`}>
+                                 data-event-element={`${headerPrefix} 高亮显示的规则`}>
             <Form className="form"
                   data-testid={`${headerPrefix}-highlighting-rule-dialog`}>
               <Modal.Header>
-                <Modal.Title>{headerPrefix} Highlighting Rule</Modal.Title>
+                <Modal.Title>{headerPrefix} 高亮显示的规则</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <Field name="field" validate={_isRequired('Field')}>
+                <Field name="field" validate={_isRequired('字段')}>
                   {({ field: { name, value, onChange }, meta }) => (
                     <Input id="field_type_controls"
                            error={meta?.error}
-                           label="Field">
+                           label="字段">
                       <Select inputId="field-select"
                               onChange={(newValue) => onChange({ target: { name, value: newValue } })}
                               options={fieldOptions}
                               allowCreate
                               value={value}
-                              placeholder="Pick a field" />
+                              placeholder="选择一个字段" />
                     </Input>
                   )}
                 </Field>
-                <Field name="condition" validate={_isRequired('Condition')}>
+                <Field name="condition" validate={_isRequired('条件')}>
                   {({ field: { name, value, onChange }, meta }) => (
                     <Input id="condition-controls"
                            error={meta?.error}
-                           label="Condition">
+                           label="条件">
                       <Select inputId="condition-select"
                               onChange={(newValue) => onChange({ target: { name, value: newValue } })}
                               options={isNumeric ? numberConditionOptions : otherConditionOptions}
                               value={value}
-                              placeholder="Choose a condition" />
+                              placeholder="选择一个条件" />
                     </Input>
                   )}
                 </Field>
-                <Field name="value" validate={_isRequired('Value')}>
+                <Field name="value" validate={_isRequired('值')}>
                   {({ field: { name, value, onChange }, meta }) => (
                     <Input id={name}
                            type="text"
                            error={meta?.error}
                            onChange={onChange}
                            value={value ?? ''}
-                           label="Value" />
+                           label="值" />
                   )}
                 </Field>
                 <HighlightingColorForm field={selectedFieldType} />

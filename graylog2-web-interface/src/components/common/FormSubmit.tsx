@@ -94,7 +94,7 @@ const FormSubmit = (props: Props) => {
                 bsSize={bsSize}
                 onClick={props.onCancel}
                 disabled={props.disabledCancel || (isAsyncSubmit && props.isSubmitting)}>
-          Cancel
+          取消
         </Button>
       )}
     </ButtonToolbar>

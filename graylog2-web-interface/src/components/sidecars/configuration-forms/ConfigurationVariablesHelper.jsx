@@ -168,7 +168,7 @@ class ConfigurationVariablesHelper extends React.Component {
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Description</th>
+                <th>描述</th>
                 <th className={ConfigurationHelperStyle.actionsColumn}>Actions</th>
               </tr>
             </thead>

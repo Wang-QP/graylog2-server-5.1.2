@@ -159,12 +159,12 @@ class EditPatternModal extends React.Component {
           {triggerButtonContent}
         </Button>
         <BootstrapModalForm show={showModal}
-                            title={`${create ? 'Create' : 'Edit'} Grok Pattern ${name}`}
-                            data-telemetry-title={`${create ? 'Create' : 'Edit'} Grok Pattern`}
+                            title={`${create ? '创建' : '编辑'} Grok Pattern ${name}`}
+                            data-telemetry-title={`${create ? '创建' : '编辑'} Grok Pattern`}
                             bsSize="large"
                             onSubmitForm={this._save}
                             onCancel={this._closeModal}
-                            submitButtonText={`${create ? 'Create' : 'Update'} pattern`}>
+                            submitButtonText={`${create ? '创建' : '更新'} pattern`}>
           <fieldset>
             <Input type="text"
                    id={this._getId('pattern-name')}

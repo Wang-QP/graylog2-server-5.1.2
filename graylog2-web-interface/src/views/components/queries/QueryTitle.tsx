@@ -62,13 +62,13 @@ const QueryTitle = ({ active, allowsClosing, id, onClose, openEditModal, openCop
 
       {active && (
         <QueryActionDropdown>
-          <MenuItem onSelect={() => openEditModal(titleValue)}>Edit Title</MenuItem>
-          <MenuItem onSelect={_onDuplicate}>Duplicate</MenuItem>
+          <MenuItem onSelect={() => openEditModal(titleValue)}>编辑标题</MenuItem>
+          <MenuItem onSelect={_onDuplicate}>复制</MenuItem>
           <MenuItem onSelect={() => openCopyToDashboardModal(true)}>
-            Copy to Dashboard
+            复制到仪表板
           </MenuItem>
           <MenuItem divider />
-          <MenuItem onSelect={onClose} disabled={!allowsClosing}>Delete</MenuItem>
+          <MenuItem onSelect={onClose} disabled={!allowsClosing}>删除</MenuItem>
         </QueryActionDropdown>
       )}
     </>

@@ -27,5 +27,5 @@ export const DEFAULT_LAYOUT = {
 };
 
 export const ADDITIONAL_ATTRIBUTES = [
-  { id: 'scheduling', title: 'Scheduling', sortable: false },
+  { id: 'scheduling', title: '调度', sortable: false },
 ];

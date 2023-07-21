@@ -40,7 +40,7 @@ const ViewDescription = ({ results }: Props) => {
   const resultsSection = (
     <>
       <SectionSubheadline>
-        Execution
+        执行
       </SectionSubheadline>
       <p>
 
@@ -52,7 +52,7 @@ const ViewDescription = ({ results }: Props) => {
   if (isAdHocSearch) {
     return (
       <>
-        <SectionInfo>Save the search or export it to a dashboard to add a custom summary and description.</SectionInfo>
+        <SectionInfo>保存搜索或将其导出到仪表板，以添加自定义摘要和描述。</SectionInfo>
         {resultsSection}
       </>
     );
@@ -62,18 +62,18 @@ const ViewDescription = ({ results }: Props) => {
     <>
       {(!viewMetadata.summary || !viewMetadata.description) && (
         <SectionInfo>
-          To add a description and summary for this {viewTypeLabel} click on the <Icon name="ellipsis-h" /> icon in the search bar to open its action menu. The action menu includes the option &quot;Edit metadata&quot;.
+          要为该{viewTypeLabel}添加描述和摘要，请单击搜索栏中的<Icon name="ellipsis-h" />图标以打开其操作菜单。操作菜单包括&quot;编辑元数据&quot;选项。
         </SectionInfo>
       )}
       {resultsSection}
       <SectionSubheadline>
-        Search
+        搜索
       </SectionSubheadline>
       <p>
-        {viewMetadata.summary || <i>This {viewTypeLabel} has no summary.</i>}
+        {viewMetadata.summary || <i>这个{viewTypeLabel}没有摘要。</i>}
       </p>
       <p>
-        {viewMetadata.description || <i>This {viewTypeLabel} has no description.</i>}
+        {viewMetadata.description || <i>这个{viewTypeLabel}没有描述。</i>}
       </p>
     </>
   );

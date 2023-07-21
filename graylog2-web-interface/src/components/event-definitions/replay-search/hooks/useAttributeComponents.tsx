@@ -74,12 +74,12 @@ const useAttributeComponents = () => {
         show: !isEventDefinition,
       },
       {
-        title: 'Priority',
+        title: '优先级',
         content: upperFirst(EventDefinitionPriorityEnum.properties[eventDefinition.priority].name),
       },
       { title: 'Execute search every', content: executeEvery?.duration && executeEvery?.unit && `${executeEvery.duration} ${executeEvery.unit.toLowerCase()}` },
       { title: 'Search within', content: searchWithin?.duration && searchWithin?.unit && `${searchWithin.duration} ${searchWithin.unit.toLowerCase()}` },
-      { title: 'Description', content: eventDefinition.description },
+      { title: '描述', content: eventDefinition.description },
       {
         title: 'Notifications',
         content: <Notifications />,

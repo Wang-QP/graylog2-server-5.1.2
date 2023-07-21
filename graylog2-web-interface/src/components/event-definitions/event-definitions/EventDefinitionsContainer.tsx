@@ -135,7 +135,7 @@ const EventDefinitionsContainer = () => {
       <div style={{ marginBottom: 5 }}>
         <SearchForm onSearch={onSearch}
                     onReset={onReset}
-                    queryHelpComponent={<QueryHelper entityName="event definition" />} />
+                    queryHelpComponent={<QueryHelper entityName="事件定义" />} />
       </div>
       <div>
         {elements?.length === 0 ? (

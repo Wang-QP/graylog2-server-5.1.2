@@ -34,8 +34,8 @@ const SharingDisabledPopover = ({ type, description }: Props) => {
   };
 
   return (
-    <StyledHoverForHelp title="Sharing not possible" pullRight={false}>
-      {description || `Only owners of this ${getReadableType(type)} are allowed to share it.`}
+    <StyledHoverForHelp title="不能共享" pullRight={false}>
+      {description || `只有拥有者 ${getReadableType(type)} 可以分享。`}
     </StyledHoverForHelp>
   );
 };

@@ -103,9 +103,9 @@ export const showDashboardsPath = `${dashboardsPath}/:viewId`;
 export const extendedSearchPath = '/extendedsearch';
 
 export const availableTimeRangeTypes = [
-  { type: 'relative' as const, name: 'Relative' },
-  { type: 'absolute' as const, name: 'Absolute' },
-  { type: 'keyword' as const, name: 'Keyword' },
+  { type: 'relative' as const, name: '相对值' },
+  { type: 'absolute' as const, name: '绝对值' },
+  { type: 'keyword' as const, name: '关键字' },
 ];
 
 export const VISUALIZATION_TABLE_HEADER_HEIGHT = 28;

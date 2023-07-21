@@ -105,7 +105,7 @@ class ActionDropdown extends React.Component<Props, ActionDropdownState> {
 
   static defaultProps = {
     container: undefined,
-    title: 'Actions',
+    title: '操作',
   };
 
   static propTypes = {

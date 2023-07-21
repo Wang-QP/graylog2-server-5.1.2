@@ -83,7 +83,7 @@ const PipelineForm = ({ pipeline, create, modal, save, onCancel }: Props) => {
       <Input type="text"
              id="description"
              name="description"
-             label="Description"
+             label="描述"
              onChange={_onChange}
              help="Pipeline description."
              value={nextPipeline.description} />

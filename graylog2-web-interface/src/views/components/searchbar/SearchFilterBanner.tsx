@@ -42,11 +42,11 @@ const SearchFilterHelp = styled(HoverForHelp)`
 export const SearchFilterExplanation = () => (
   <>
     <p>
-      <i>Search filters</i> contain their own query and extend the main query using the <b>AND</b> operator.
+      <i>搜索过滤</i> 包含自己的查询，并支持使用 <b>AND</b> 运算符.
     </p>
     <p>
-      Filters can be saved separately and reused in saved searches and dashboards.
-      Updating a saved filter will automatically affect the search results of searches which include the filter.
+      过滤器可以单独保存，并在保存的搜索和仪表板中重用。
+      更新已保存的筛选器将自动影响包含该筛选器的搜索结果。
     </p>
   </>
 );
@@ -65,15 +65,15 @@ const SearchFilterBanner = ({ onHide, pluggableControls }: Props) => {
 
   return (
     <Container>
-      Filters
-      <SearchFilterHelp title="Search Filters" trigger={['click']}>
+      过滤
+      <SearchFilterHelp title="搜索过滤" trigger={['click']}>
         <SearchFilterExplanation />
         <p>
-          Search filters and parameters are available for the enterprise version.
+          企业版提供搜索过滤器和参数。
         </p>
         <StyledButtonBar>
           <Button onClick={onHide} bsSize="xs">
-            Hide controls
+            隐藏控件
           </Button>
         </StyledButtonBar>
       </SearchFilterHelp>

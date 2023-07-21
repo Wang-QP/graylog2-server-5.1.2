@@ -227,7 +227,7 @@ class IndexSetConfigurationForm extends React.Component<Props, State> {
                                      help="Descriptive name of the index set."
                                      required />
                     <FormikFormGroup type="text"
-                                     label="Description"
+                                     label="描述"
                                      name="description"
                                      help="Add a description of this index set."
                                      required />

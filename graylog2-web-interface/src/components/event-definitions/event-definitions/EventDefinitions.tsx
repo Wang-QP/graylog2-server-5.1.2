@@ -95,7 +95,7 @@ const EventDefinitions = ({ eventDefinitions, context, pagination, query, onPage
                     onReset={onQueryChange}
                     placeholder="Find Event Definitions"
                     wrapperClass={styles.inline}
-                    queryHelpComponent={<QueryHelper entityName="event definition" />}
+                    queryHelpComponent={<QueryHelper entityName="事件定义" />}
                     topMargin={0}
                     useLoadingState />
 

@@ -89,7 +89,7 @@ class EventsSearchBar extends React.Component {
           <div className={styles.searchForm}>
             <SearchForm query={parameters.query}
                         onSearch={onQueryChange}
-                        placeholder="Find Events"
+                        placeholder="发现事件"
                         topMargin={0}
                         useLoadingState>
               <Button onClick={this.handleSearchReload} disabled={isReloadingResults}>
@@ -109,13 +109,13 @@ class EventsSearchBar extends React.Component {
         </div>
         <div>
           <ButtonGroup>
-            <Button active={filterAlerts === 'only'} onClick={onAlertFilterChange('only')}>Alerts</Button>
-            <Button active={filterAlerts === 'exclude'} onClick={onAlertFilterChange('exclude')}>Events</Button>
-            <Button active={filterAlerts === 'include'} onClick={onAlertFilterChange('include')}>Both</Button>
+            <Button active={filterAlerts === 'only'} onClick={onAlertFilterChange('only')}>警报</Button>
+            <Button active={filterAlerts === 'exclude'} onClick={onAlertFilterChange('exclude')}>事件</Button>
+            <Button active={filterAlerts === 'include'} onClick={onAlertFilterChange('include')}>两者兼备</Button>
           </ButtonGroup>
 
           <FormGroup className="form-inline">
-            <ControlLabel>Show</ControlLabel>
+            <ControlLabel>显示</ControlLabel>
             <FormControl componentClass="select" bsSize="small" value={pageSize} onChange={this.handlePageSizeChange}>
               {pageSizes.map((size) => <option key={`option-${size}`} value={size}>{size}</option>)}
             </FormControl>

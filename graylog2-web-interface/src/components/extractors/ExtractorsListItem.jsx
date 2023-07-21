@@ -190,7 +190,7 @@ class ExtractorsListItem extends React.Component {
 
     return (
       <div className="configuration-section">
-        <h4>Condition</h4>
+        <h4>条件</h4>
         <ul>
           <li>
             Will only attempt to run if the message{' '}

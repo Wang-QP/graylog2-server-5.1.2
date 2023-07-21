@@ -81,28 +81,27 @@ const ExtractorsPage = createReactClass({
     const { node, input } = this.state;
 
     return (
-      <DocumentTitle title={`Extractors of ${input.title}`}>
+      <DocumentTitle title={`${input.title}提取器`}>
         <div>
-          <PageHeader title={<span>Extractors of <em>{input.title}</em></span>}
+          <PageHeader title={<span><em>{input.title}</em>提取器</span>}
                       actions={(
-                        <DropdownButton bsStyle="info" id="extractor-actions-dropdown" title="Actions" pullRight>
+                        <DropdownButton bsStyle="info" id="extractor-actions-dropdown" title="操作" pullRight>
                           <LinkContainer to={Routes.import_extractors(node.node_id, input.id)}>
-                            <MenuItem>Import extractors</MenuItem>
+                            <MenuItem>导入提取器</MenuItem>
                           </LinkContainer>
                           <LinkContainer to={Routes.export_extractors(node.node_id, input.id)}>
-                            <MenuItem>Export extractors</MenuItem>
+                            <MenuItem>导出提取器</MenuItem>
                           </LinkContainer>
                         </DropdownButton>
                       )}
                       documentationLink={{
-                        title: 'Extractors documentation',
+                        title: '提取器文档',
                         path: DocsHelper.PAGES.EXTRACTORS,
                       }}>
             <span>
-              Extractors are applied on every message that is received by this input. Use them to extract and transform{' '}
-              any text data into fields that allow you easy filtering and analysis later on.{' '}
-              Example: Extract the HTTP response code from a log message, transform it to a numeric field and attach it{' '}
-              as <em>http_response_code</em> to the message.
+              提取器应用于该输入接收到的每条消息。
+              使用它们可以提取任何文本数据并将其转换为字段，以便稍后进行过滤和分析。
+              示例:从日志消息中提取http响应代码，将其转换为数字字段，并将其作为<em>http_response_code</em>附加到消息中。
             </span>
           </PageHeader>
           <ExtractorsList input={input} node={node} />

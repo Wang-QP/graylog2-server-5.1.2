@@ -72,7 +72,7 @@ const ShowEventDefinitionPage = () => {
       <PageHeader title={`View "${notification.title}" Notification`}
                   actions={notification && <EventNotificationActionLinks notificationId={notification.id} />}
                   documentationLink={{
-                    title: 'Alerts documentation',
+                    title: '警报的文档',
                     path: DocsHelper.PAGES.ALERTS,
                   }}>
         <span>

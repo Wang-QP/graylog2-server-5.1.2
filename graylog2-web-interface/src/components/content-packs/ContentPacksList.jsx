@@ -148,9 +148,9 @@ class ContentPacksList extends React.Component {
                 {updateButton}
                 <Button bsSize="small" onClick={openFunc}>Install</Button>
                 {installModal}
-                <DropdownButton id={`more-actions-${item.id}`} title="More Actions" bsSize="small" pullRight>
+                <DropdownButton id={`more-actions-${item.id}`} title="更多操作" bsSize="small" pullRight>
                   <LinkContainer to={Routes.SYSTEM.CONTENTPACKS.show(item.id)}>
-                    <MenuItem>Show</MenuItem>
+                    <MenuItem>显示</MenuItem>
                   </LinkContainer>
                   <LinkContainer to={Routes.SYSTEM.CONTENTPACKS.edit(encodeURIComponent(item.id), encodeURIComponent(item.rev))}>
                     <MenuItem>Create New Version</MenuItem>

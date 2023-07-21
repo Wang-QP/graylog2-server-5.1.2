@@ -148,7 +148,7 @@ const EventNotificationsContainer = () => {
       </div>
       <div>
         {elements?.length === 0 ? (
-          <NoSearchResult>No notification has been found</NoSearchResult>
+          <NoSearchResult>没有找到通知</NoSearchResult>
         ) : (
           <EntityDataTable<EventNotification> data={elements}
                                               visibleColumns={layoutConfig.displayedAttributes}

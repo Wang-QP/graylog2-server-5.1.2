@@ -65,7 +65,7 @@ const UNLIMITED_ENTITY_SHARE_REQ = { page: 1, perPage: 10000, query: '' };
 const grnId = (grn) => getValuesFromGRN(grn).id;
 const _grnOptionFormatter = ({ id, title }: SharedEntity): Option => ({ value: grnId(id), label: title });
 const typeOptions = [
-  { value: 'dashboard', label: 'Dashboard' },
+  { value: 'dashboard', label: '仪表板' },
   { value: 'stream', label: 'Stream' },
   { value: 'search', label: 'Search' },
 ];

@@ -42,7 +42,7 @@ const LoadMessageForm = ({ loadMessage, children, loading }: LoadMessageFormProp
     <div>
       <form className="form-inline message-loader-form" onSubmit={loadMessage}>
         {children}
-        <StyledFormSubmit submitButtonText="Load message"
+        <StyledFormSubmit submitButtonText="加载消息"
                           isSubmitting={loading}
                           submitLoadingText="Loading message..."
                           isAsyncSubmit
@@ -122,8 +122,8 @@ const MessageLoader = ({ hidden, hideText, onMessageLoaded, messageId: defaultMe
       )}
       {isHidden || (
         <LoadMessageForm loading={loading} loadMessage={_loadMessage}>
-          <input ref={messageIdRef} type="text" className="form-control message-id-input" placeholder="Message ID" required value={messageId} onChange={onChangeMessageId} />
-          <input type="text" className="form-control" placeholder="Index" required value={index} onChange={onChangeIndex} />
+          <input ref={messageIdRef} type="text" className="form-control message-id-input" placeholder="消息 ID" required value={messageId} onChange={onChangeMessageId} />
+          <input type="text" className="form-control" placeholder="索引" required value={index} onChange={onChangeIndex} />
         </LoadMessageForm>
       )}
     </div>

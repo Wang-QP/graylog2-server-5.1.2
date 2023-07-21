@@ -24,22 +24,22 @@ import DocsHelper from 'util/DocsHelper';
 import DashboardsOverview from 'views/components/dashboard/DashboardsOverview';
 
 const DashboardsPage = () => (
-  <DocumentTitle title="Dashboards">
-    <PageHeader title="Dashboards"
+  <DocumentTitle title="仪表板">
+    <PageHeader title="仪表板"
                 actions={(
                   <IfPermitted permissions="dashboards:create">
                     <LinkContainer to={Routes.pluginRoute('DASHBOARDS_NEW')}>
-                      <Button bsStyle="success">Create new dashboard</Button>
+                      <Button bsStyle="success">创建新的仪表板</Button>
                     </LinkContainer>
                   </IfPermitted>
                 )}
                 documentationLink={{
-                  title: 'Dashboard documentation',
+                  title: '仪表板文档',
                   path: DocsHelper.PAGES.DASHBOARDS,
                 }}>
       <span>
-        Use dashboards to create specific views on your messages. Create a new dashboard here and add any graph or
-        chart you create in other parts of Graylog with one click.
+        使用仪表板创建消息的特定视图。在这里创建一个新的仪表板，并添加任何图形或
+        您在graylog的其他部分创建的图表，只需单击一下。
       </span>
     </PageHeader>
 

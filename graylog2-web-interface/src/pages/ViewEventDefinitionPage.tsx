@@ -89,7 +89,7 @@ const ViewEventDefinitionPage = () => {
                     </ButtonToolbar>
                   )}
                   documentationLink={{
-                    title: 'Alerts documentation',
+                    title: '警报的文档',
                     path: DocsHelper.PAGES.ALERTS,
                   }}>
         <span>

@@ -341,7 +341,7 @@ class ContentPackSelection extends React.Component {
                        onChange={this._bindValue}
                        onBlur={() => this._handleTouched('description')}
                        rows={6}
-                       label="Description"
+                       label="描述"
                        help="Give a long description of the content pack in markdown." />
                 <Input name="vendor"
                        id="vendor"

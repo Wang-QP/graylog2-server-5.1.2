@@ -35,7 +35,7 @@ const StatusCell = ({ status, isSystemEvent } : Props) => {
 
   return (
     <StatusLabel bsStyle={isSuccess ? 'success' : 'warning'}>
-      {isSuccess ? 'enabled' : 'disabled'}
+      {isSuccess ? '启用' : '禁用'}
     </StatusLabel>
   );
 };

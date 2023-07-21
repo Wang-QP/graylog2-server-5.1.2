@@ -208,8 +208,8 @@ public class V20190705071400_AddEventIndexSetsMigration extends Migration {
         if (dbService.getSystemEventDefinitions().isEmpty()) {
             EventDefinitionDto eventDto =
                     EventDefinitionDto.builder()
-                            .title("System notification events")
-                            .description("Reserved event definition for system notification events")
+                            .title("系统通知事件")
+                            .description("为系统通知事件保留事件定义")
                             .alert(false)
                             .priority(1)
                             .keySpec(ImmutableList.of())

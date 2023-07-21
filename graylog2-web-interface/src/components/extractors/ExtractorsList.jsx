@@ -81,14 +81,14 @@ const ExtractorsList = ({ input, node }) => {
         <Col md={12}>
           <Row className="row-sm">
             <Col md={8}>
-              <h2>Configured extractors</h2>
+              <h2>配置提取器</h2>
             </Col>
             <Col md={4}>
               {sortExtractorsButton}
             </Col>
           </Row>
           <EntityList bsNoItemsStyle="info"
-                      noItemsText="This input has no configured extractors."
+                      noItemsText="该输入没有配置提取器。"
                       items={formattedExtractors} />
         </Col>
       </Row>

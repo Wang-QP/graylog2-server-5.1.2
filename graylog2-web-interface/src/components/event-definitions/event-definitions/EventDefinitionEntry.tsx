@@ -136,7 +136,7 @@ const EventDefinitionEntry = ({
       <ShareButton entityId={eventDefinition.id} entityType="event_definition" onClick={() => setShowEntityShareModal(true)} />
 
       {!isSystemEventDefinition() && (
-        <DropdownButton id="more-dropdown" title="More" pullRight>
+        <DropdownButton id="more-dropdown" title="更多" pullRight>
           <MenuItem onClick={handleCopy}>Duplicate</MenuItem>
           <MenuItem divider />
 
@@ -171,7 +171,7 @@ const EventDefinitionEntry = ({
       {showEntityShareModal && (
         <EntityShareModal entityId={eventDefinition.id}
                           entityType="event_definition"
-                          entityTypeTitle="event definition"
+                          entityTypeTitle="事件定义"
                           entityTitle={eventDefinition.title}
                           description="Search for a User or Team to add as collaborator on this event definition."
                           onClose={() => setShowEntityShareModal(false)} />

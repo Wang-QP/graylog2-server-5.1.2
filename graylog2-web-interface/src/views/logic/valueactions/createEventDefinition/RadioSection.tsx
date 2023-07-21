@@ -58,7 +58,7 @@ const RadioSection = ({ strategy, onChange, strategyAvailabilities }: Props) => 
     }
       </Container>
       <p>
-        <b>Description: </b><i>{description}</i>
+        <b>描述: </b><i>{description}</i>
       </p>
     </>
   );

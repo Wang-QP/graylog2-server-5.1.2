@@ -37,7 +37,7 @@ const EventNotificationDetails = ({ notification }) => {
   return (
     <SectionComponent title="Details">
       <ReadOnlyFormGroup label="Title" value={notification.title} />
-      <ReadOnlyFormGroup label="Description" value={notification.description} />
+      <ReadOnlyFormGroup label="描述" value={notification.description} />
       <ReadOnlyFormGroup label="Notification Type" value={notification.config.type} />
       {DetailsComponent ? <DetailsComponent notification={notification} /> : <Alert bsStyle="danger">Notification type not supported</Alert>}
     </SectionComponent>

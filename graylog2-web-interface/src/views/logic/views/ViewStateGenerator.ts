@@ -63,8 +63,8 @@ const _defaultWidgets: DefaultWidgets = {
 
     const titles = {
       widget: {
-        [histogram.id]: 'Message Count',
-        [messageTable.id]: 'All Messages',
+        [histogram.id]: '消息数量',
+        [messageTable.id]: '所有消息',
       },
     };
 

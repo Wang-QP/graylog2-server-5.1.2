@@ -41,7 +41,7 @@ const CreateEventDefinitionPage = ({ currentUser }) => {
       <EventsPageNavigation />
       <PageHeader title="New Notification"
                   documentationLink={{
-                    title: 'Alerts documentation',
+                    title: '警报的文档',
                     path: DocsHelper.PAGES.ALERTS,
                   }}>
         <span>

@@ -209,7 +209,7 @@ const QueryValidation = () => {
           </ExplanationTrigger>
         ) : (
           <DocumentationLink page={DocsHelper.PAGES.SEARCH_QUERY_LANGUAGE}
-                             title="Search query syntax documentation"
+                             title="搜索查询语法文档"
                              text={<Icon name="lightbulb" />} />
         )}
       </Container>

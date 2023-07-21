@@ -38,7 +38,7 @@ const _isActive = (requestPath, prefix) => {
 const titleMap = {
   '/overview': 'Overview',
   '/nodes': 'Nodes',
-  '/inputs': 'Inputs',
+  '/inputs': '输入',
   '/outputs': 'Outputs',
   '/indices': 'Indices',
   '/logging': 'Logging',

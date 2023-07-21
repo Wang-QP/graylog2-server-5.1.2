@@ -59,7 +59,7 @@ const ContentPackDetails = (props) => {
           {contentPack.description
           && (
           <div>
-            <h2>Description</h2>
+            <h2>描述</h2>
             <br />
             <Well>
               <Markdown text={contentPack.description} />

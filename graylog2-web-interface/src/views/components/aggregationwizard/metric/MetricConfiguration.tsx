@@ -94,7 +94,7 @@ const Metric = ({ index }: Props) => {
       <Field name={`metrics.${index}.field`}>
         {({ field: { name, value, onChange }, meta: { error } }) => (
           <Input id="metric-field"
-                 label="Field"
+                 label="字段"
                  error={error}
                  labelClassName="col-sm-3"
                  wrapperClassName="col-sm-9">

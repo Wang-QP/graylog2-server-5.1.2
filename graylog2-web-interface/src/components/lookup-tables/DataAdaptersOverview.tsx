@@ -50,7 +50,7 @@ const buildHelpPopover = () => (
       <thead>
         <tr>
           <th>Field</th>
-          <th>Description</th>
+          <th>描述</th>
         </tr>
       </thead>
       <tbody>
@@ -188,7 +188,7 @@ const DataAdaptersOverview = ({ dataAdapters, pagination, errorStates, paginatio
               <thead>
                 <tr>
                   <th className={Styles.rowTitle}>Title</th>
-                  <th className={Styles.rowDescription}>Description</th>
+                  <th className={Styles.rowDescription}>描述</th>
                   <th className={Styles.rowName}>Name</th>
                   <th>Throughput</th>
                   <th className={Styles.rowActions}>Actions</th>

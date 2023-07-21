@@ -45,7 +45,7 @@ const PageSizeSelect = ({ pageSizes, pageSize, onChange, className, showLabel }:
   const select = (
     <StyledDropdownButton className={className}
                           id="page-size-select"
-                          title={`${pageSize} Rows`}
+                          title={`${pageSize} 行`}
                           aria-label="Configure page size"
                           pullRight
                           bsSize="small"
@@ -57,7 +57,7 @@ const PageSizeSelect = ({ pageSizes, pageSize, onChange, className, showLabel }:
   if (showLabel) {
     return (
       <Container className={className}>
-        Show
+        显示
         {select}
       </Container>
     );

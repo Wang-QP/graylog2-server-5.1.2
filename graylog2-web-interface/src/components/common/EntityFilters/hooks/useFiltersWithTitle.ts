@@ -110,7 +110,7 @@ const filterTitle = (
 
     const fetchedTitle = requestedFilterTitles?.find(({ id, type }) => (type === attribute.related_collection && id === filterValue))?.title;
 
-    return fetchedTitle ?? 'Loading...';
+    return fetchedTitle ?? '加载中...';
   }
 
   return filterValue;

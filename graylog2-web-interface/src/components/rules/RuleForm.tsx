@@ -137,7 +137,7 @@ const RuleForm = ({ create }: Props) => {
 
         <Input type="textarea"
                id="description"
-               label="Description"
+               label="描述"
                value={description}
                onChange={handleDescriptionChange}
                autoFocus

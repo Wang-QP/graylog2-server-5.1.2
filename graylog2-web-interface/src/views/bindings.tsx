@@ -227,14 +227,14 @@ const exports: PluginExports = {
   fieldActions: [
     {
       type: 'chart',
-      title: 'Chart',
+      title: '图表',
       thunk: ChartActionHandler,
       isEnabled: ({ type }) => type.isNumeric(),
       resetFocus: true,
     },
     {
       type: 'aggregate',
-      title: 'Show top values',
+      title: '显示最高值',
       thunk: AggregateActionHandler,
       isEnabled: (({
         field,
@@ -245,7 +245,7 @@ const exports: PluginExports = {
     },
     {
       type: 'statistics',
-      title: 'Statistics',
+      title: '统计数据',
       isEnabled: (({
         field,
         type,
@@ -256,7 +256,7 @@ const exports: PluginExports = {
     },
     {
       type: 'add-to-table',
-      title: 'Add to table',
+      title: '添加到表中',
       thunk: AddToTableActionHandler,
       isEnabled: AddToTableActionHandler.isEnabled,
       isHidden: AddToTableActionHandler.isHidden,
@@ -264,7 +264,7 @@ const exports: PluginExports = {
     },
     {
       type: 'remove-from-table',
-      title: 'Remove from table',
+      title: '从表中移除',
       thunk: RemoveFromTableActionHandler,
       isEnabled: RemoveFromTableActionHandler.isEnabled,
       isHidden: RemoveFromTableActionHandler.isHidden,
@@ -272,21 +272,21 @@ const exports: PluginExports = {
     },
     {
       type: 'add-to-all-tables',
-      title: 'Add to all tables',
+      title: '添加到所有表',
       thunk: AddToAllTablesActionHandler,
       isEnabled: ({ field, type }) => (!isFunction(field) && !type.isDecorated()),
       resetFocus: false,
     },
     {
       type: 'remove-from-all-tables',
-      title: 'Remove from all tables',
+      title: '从所有表中删除',
       thunk: RemoveFromAllTablesActionHandler,
       isEnabled: ({ field, type }) => (!isFunction(field) && !type.isDecorated()),
       resetFocus: false,
     },
     {
       type: 'copy-field-to-clipboard',
-      title: 'Copy field name to clipboard',
+      title: '将字段名称复制到剪贴板',
       handler: CopyFieldToClipboard,
       isEnabled: () => true,
       resetFocus: false,
@@ -295,49 +295,49 @@ const exports: PluginExports = {
   valueActions: filterCloudValueActions([
     {
       type: 'exclude',
-      title: 'Exclude from results',
+      title: '排除在结果之外',
       thunk: ExcludeFromQueryHandler,
       isEnabled: ({ field, type }: ActionHandlerArguments) => (!isFunction(field) && !type.isDecorated()),
       resetFocus: false,
     },
     {
       type: 'add-to-query',
-      title: 'Add to query',
+      title: '添加到查询',
       thunk: AddToQueryHandler,
       isEnabled: ({ field, type }: ActionHandlerArguments) => (!isFunction(field) && !type.isDecorated()),
       resetFocus: false,
     },
     {
       type: 'show-bucket',
-      title: 'Show documents for value',
+      title: '显示有价值的文件',
       thunk: ShowDocumentsHandler,
       isEnabled: ShowDocumentsHandler.isEnabled,
       resetFocus: true,
     },
     {
       type: 'create-extractor',
-      title: 'Create extractor',
+      title: '创建器',
       isEnabled: ({ type, contexts }) => (!!contexts.message && !type.isDecorated() && !!contexts.isLocalNode),
       component: SelectExtractorType,
       resetFocus: false,
     },
     {
       type: 'highlight-value',
-      title: 'Highlight this value',
+      title: '高亮显示该值',
       thunk: HighlightValueHandler,
       isEnabled: HighlightValueHandler.isEnabled,
       resetFocus: false,
     },
     {
       type: 'copy-value-to-clipboard',
-      title: 'Copy value to clipboard',
+      title: '将值复制到剪贴板',
       handler: CopyValueToClipboard,
       isEnabled: () => true,
       resetFocus: false,
     },
     {
       type: 'create-event-definition-from-value',
-      title: 'Create event definition',
+      title: '创建事件定义',
       isEnabled: () => true,
       resetFocus: false,
       component: CreateEventDefinition,
@@ -345,32 +345,32 @@ const exports: PluginExports = {
   ], ['create-extractor']),
   visualizationTypes: visualizationBindings,
   widgetCreators: [{
-    title: 'Message Count',
+    title: '消息数量',
     func: CreateMessageCount,
     icon: () => <Icon name="hashtag" />,
   }, {
-    title: 'Message Table',
+    title: '消息表',
     func: CreateMessagesWidget,
     icon: () => <Icon name="list" />,
   }, {
-    title: 'Custom Aggregation',
+    title: '自定义聚合',
     func: CreateCustomAggregation,
     icon: () => <Icon name="chart-column" />,
   }],
   creators: [
     {
       type: 'preset',
-      title: 'Message Count',
+      title: '消息数量',
       func: AddMessageCountActionHandler,
     },
     {
       type: 'preset',
-      title: 'Message Table',
+      title: '消息表',
       func: AddMessageTableActionHandler,
     },
     {
       type: 'generic',
-      title: 'Aggregation',
+      title: '聚合',
       func: AddCustomAggregation,
     },
   ],
@@ -397,7 +397,7 @@ const exports: PluginExports = {
   ],
   'views.components.widgets.messageTable.previewOptions': [
     {
-      title: 'Show message in new row',
+      title: '在新的一行中显示消息',
       isChecked: (config) => config.showMessageRow,
       isDisabled: () => false,
       onChange: (config, onConfigChange) => {

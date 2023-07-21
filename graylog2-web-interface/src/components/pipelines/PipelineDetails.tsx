@@ -68,7 +68,7 @@ const PipelineDetails = ({ pipeline, create, onChange, onCancel }: Props) => {
           <PipelineDl className="dl-horizontal">
             <dt>Title</dt>
             <dd>{pipeline.title}</dd>
-            <dt>Description</dt>
+            <dt>描述</dt>
             <dd>{pipeline.description}</dd>
             <dt>Created</dt>
             <dd><RelativeTime dateTime={pipeline.created_at} /></dd>

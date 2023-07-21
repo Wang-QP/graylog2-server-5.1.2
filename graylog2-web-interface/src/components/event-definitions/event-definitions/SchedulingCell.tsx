@@ -67,7 +67,7 @@ const getTimeRange = (scheduler: Scheduler) => {
 const detailsPopover = (title, scheduler: Scheduler, clearNotifications: () => void) => (
   <WidePopover id="event-definition-details" title={`${title} details.`}>
     <dl>
-      <DetailTitle>Status:</DetailTitle>
+      <DetailTitle>状态:</DetailTitle>
       <DetailValue>{scheduler.status}</DetailValue>
       {scheduler.triggered_at && (
       <>
@@ -113,7 +113,7 @@ const SchedulingInfo = ({
 
   return (
     <>
-      {`Runs every ${executeEveryFormatted}, searching within the last ${searchWithinFormatted}. `}
+      {`每 ${executeEveryFormatted} 分钟运行一次，在最近 ${searchWithinFormatted} 内进行搜索。`}
       <OverlayTrigger trigger="click" rootClose placement="left" overlay={detailsPopover(title, scheduler, clearNotifications)}>
         <DetailsButton bsStyle="link"><Icon name="circle-info" /></DetailsButton>
       </OverlayTrigger>
@@ -123,7 +123,7 @@ const SchedulingInfo = ({
 
 const SchedulingCell = ({ definition } : Props) => {
   if (!definition?.config?.search_within_ms && !definition?.config?.execute_every_ms) {
-    return <>Not Scheduled.</>;
+    return <>尚未安排。</>;
   }
 
   const clearNotifications = (eventDefinition: EventDefinition) => {

@@ -223,7 +223,7 @@ class ContentPackEditParameter extends React.Component {
                    maxLength={250}
                    value={this.state.newParameter.description}
                    onChange={this._bindValue}
-                   label="Description"
+                   label="描述"
                    help={this.state.descrError ? this.state.descrError
                      : 'Give a description explaining what will be done with this parameter.'}
                    required />

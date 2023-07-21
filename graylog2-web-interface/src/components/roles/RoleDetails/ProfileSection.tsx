@@ -32,7 +32,7 @@ const ProfileSection = ({
 }: Props) => (
   <SectionComponent title="Profile">
     <ReadOnlyFormGroup label="Name" value={name} />
-    <ReadOnlyFormGroup label="Description" value={description} />
+    <ReadOnlyFormGroup label="描述" value={description} />
   </SectionComponent>
 );
 

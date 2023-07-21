@@ -28,16 +28,15 @@ const EventsPage = ({ location }) => {
   const filteredSourceStream = location.query.stream_id;
 
   return (
-    <DocumentTitle title="Alerts &amp; Events">
+    <DocumentTitle title="警报和事件">
       <EventsPageNavigation />
-      <PageHeader title="Alerts &amp; Events"
+      <PageHeader title="警报和事件"
                   documentationLink={{
-                    title: 'Alerts documentation',
+                    title: '警报的文档',
                     path: DocsHelper.PAGES.ALERTS,
                   }}>
         <span>
-          Define Events through different conditions. Add Notifications to Events that require your attention
-          to create Alerts.
+          通过不同的条件定义事件。为需要注意的事件添加通知创建警报。
         </span>
       </PageHeader>
 

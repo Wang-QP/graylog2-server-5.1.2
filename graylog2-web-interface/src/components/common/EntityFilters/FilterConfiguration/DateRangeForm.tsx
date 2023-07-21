@@ -193,8 +193,8 @@ const DateRangeForm = ({ filter, onSubmit }: Props) => {
               </Section>
             </Sections>
             <Info>
-              Format: <DateTimeFormat>YYYY-MM-DD [HH:mm:ss[.SSS]]</DateTimeFormat>.<br />
-              All timezones using: <b>{userTimezone}</b>.
+              格式: <DateTimeFormat>YYYY-MM-DD [HH:mm:ss[.SSS]]</DateTimeFormat>.<br />
+              所有时区使用: <b>{userTimezone}</b>.
             </Info>
             <ModalSubmit submitButtonText={`${filter ? 'Update' : 'Create'} filter`}
                          bsSize="small"

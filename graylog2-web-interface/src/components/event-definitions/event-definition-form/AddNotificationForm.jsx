@@ -115,7 +115,7 @@ class AddNotificationForm extends React.Component {
 
           <ButtonToolbar>
             {doneButton}
-            <Button onClick={onCancel}>Cancel</Button>
+            <Button onClick={onCancel}>取消</Button>
           </ButtonToolbar>
         </Col>
       </Row>

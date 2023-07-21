@@ -263,9 +263,9 @@ const CollectorConfigurationModal = ({
         </ConfigurationContainer>
       </Modal.Body>
       <Modal.Footer>
-        <Button type="button" onClick={onCancel}>Cancel</Button>
-        <Button type="button" onClick={onReset}>Reset</Button>
-        <Button type="submit" bsStyle="primary" disabled={isNotDirty} onClick={() => onSave(selectedConfigurations, partiallySelectedConfigurations)}>Save</Button>
+        <Button type="button" onClick={onCancel}>取消</Button>
+        <Button type="button" onClick={onReset}>重置</Button>
+        <Button type="submit" bsStyle="primary" disabled={isNotDirty} onClick={() => onSave(selectedConfigurations, partiallySelectedConfigurations)}>保存</Button>
       </Modal.Footer>
     </BootstrapModalWrapper>
   );

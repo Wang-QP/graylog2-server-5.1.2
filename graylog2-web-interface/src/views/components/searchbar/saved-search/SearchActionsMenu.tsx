@@ -90,7 +90,7 @@ const SearchActionsMenu = () => {
   const loaded = isNew === false;
   const savedSearchColor = dirty ? theme.colors.variant.dark.warning : theme.colors.variant.info;
   const disableReset = !(dirty || loaded);
-  const savedViewTitle = loaded ? 'Saved search' : 'Save search';
+  const savedViewTitle = loaded ? '已存搜索' : '保存搜索';
   const title = dirty ? 'Unsaved changes' : savedViewTitle;
   const pluggableSaveViewControls = useSaveViewFormControls();
   const history = useHistory();
@@ -165,7 +165,7 @@ const SearchActionsMenu = () => {
   return (
     <Container aria-label="Search Meta Buttons">
       <Button title={title} ref={formTarget} onClick={toggleFormModal}>
-        <Icon style={{ color: loaded ? savedSearchColor : undefined }} name="floppy-disk" type={loaded ? 'solid' : 'regular'} /> Save
+        <Icon style={{ color: loaded ? savedSearchColor : undefined }} name="floppy-disk" type={loaded ? 'solid' : 'regular'} /> 保存
       </Button>
       {showForm && (
         <SavedSearchForm target={formTarget.current}
@@ -175,9 +175,9 @@ const SearchActionsMenu = () => {
                          toggleModal={toggleFormModal}
                          value={currentTitle} />
       )}
-      <Button title="Load a previously saved search"
+      <Button title="加载以前保存的搜索"
               onClick={toggleListModal}>
-        <Icon name="folder" type="regular" /> Load
+        <Icon name="folder" type="regular" /> 加载
       </Button>
       {showList && (
         <SavedSearchesModal deleteSavedSearch={deleteSavedSearch}
@@ -188,7 +188,7 @@ const SearchActionsMenu = () => {
                    entityId={view.id}
                    onClick={toggleShareSearch}
                    bsStyle="default"
-                   disabledInfo={isNew && 'Only saved searches can be shared.'} />
+                   disabledInfo={isNew && '只有保存的搜索才能共享。'} />
       <DropdownButton title={<Icon name="ellipsis-h" />}
                       aria-label="Open search actions dropdown"
                       id="search-actions-dropdown"

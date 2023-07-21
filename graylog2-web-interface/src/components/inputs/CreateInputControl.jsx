@@ -143,14 +143,14 @@ const CreateInputControl = createReactClass({
         <Col md={12}>
           <form className="form-inline" onSubmit={this._openModal}>
             <div className="form-group" style={{ width: 300 }}>
-              <Select placeholder="Select input"
+              <Select placeholder="选择输入"
                       options={this._formatSelectOptions()}
                       matchProp="label"
                       onChange={this._onInputSelect}
                       value={selectedInput} />
             </div>
             &nbsp;
-            <Button bsStyle="success" type="submit" disabled={!selectedInput}>Launch new input</Button>
+            <Button bsStyle="success" type="submit" disabled={!selectedInput}>启动新输入</Button>
             <ExternalLinkButton href="https://marketplace.graylog.org/"
                                 bsStyle="info"
                                 onClick={() => {
@@ -160,7 +160,7 @@ const CreateInputControl = createReactClass({
                                   });
                                 }}
                                 style={{ marginLeft: 10 }}>
-              Find more inputs
+              查找更多输入
             </ExternalLinkButton>
           </form>
           {inputModal || customInputsComponent}

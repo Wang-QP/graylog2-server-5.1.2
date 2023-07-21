@@ -124,7 +124,7 @@ const InputStateBadge = createReactClass({
       return (
         <OverlayTrigger trigger="click" placement="bottom" overlay={popover} rootClose>
           <Label bsStyle={this._labelClassForState(sorted)}
-                 title="Click to show details"
+                 title="单击以显示详细信息"
                  bsSize="xsmall"
                  style={{ cursor: 'pointer' }}>{this._textForState(sorted)}
           </Label>

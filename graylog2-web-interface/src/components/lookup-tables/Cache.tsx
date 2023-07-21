@@ -54,7 +54,7 @@ const Cache = ({ cache }: Props) => {
         <h2>{cache.title} <small>({plugin.displayName})</small></h2>
         <SummaryContainer>
           <SummaryRow>
-            <Title>Description:</Title>
+            <Title>描述:</Title>
             <Value>{cache.description || <em>No description.</em>}</Value>
           </SummaryRow>
         </SummaryContainer>

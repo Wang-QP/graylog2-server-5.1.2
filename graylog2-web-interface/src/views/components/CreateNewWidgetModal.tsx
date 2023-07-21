@@ -103,7 +103,7 @@ const CreateNewWidgetModal = ({ onCancel, position }: Props) => {
       </Modal.Body>
       <Modal.Footer>
         <Button type="button" onClick={onCancel}>
-          Cancel
+          取消
         </Button>
       </Modal.Footer>
     </Modal>

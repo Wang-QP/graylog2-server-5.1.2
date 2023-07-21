@@ -49,7 +49,7 @@ export const formHasErrors = (errorMap = {}) => Object.keys(errorMap).length > 0
 export const validateValue = (fieldValue, conditionType, conditionValue) => {
   switch (conditionType) {
     case 'required':
-      if (!fieldValue || (fieldValue?.size === 0)) return 'Field is required.';
+      if (!fieldValue || (fieldValue?.size === 0)) return '字段是必填的。';
       break;
     case 'min':
       if (fieldValue < Number(conditionValue)) return `Must be greater than ${conditionValue}.`;

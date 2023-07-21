@@ -78,7 +78,7 @@ const RangePresetDropdown = ({ disabled, onChange, onToggle, className, displayT
       options.push(all);
     }
   } else {
-    options = (<MenuItem eventKey="300" disabled>Loading...</MenuItem>);
+    options = (<MenuItem eventKey="300" disabled>加载中...</MenuItem>);
   }
 
   const _onChange = (range) => {

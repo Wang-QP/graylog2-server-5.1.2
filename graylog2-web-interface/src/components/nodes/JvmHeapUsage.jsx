@@ -134,13 +134,13 @@ const JvmHeapUsage = createReactClass({
 
         detail = (
           <p>
-            The JVM is using{' '}
+            JVM正在使用{' '}
             <Blob className="used-memory" />
             <strong> {NumberUtils.formatBytes(usedMemory)}</strong>
             {' '}of{' '}
             <Blob className="committed-memory" />
             <strong> {NumberUtils.formatBytes(committedMemory)}</strong>
-            {' '}heap space and will not attempt to use more than{' '}
+            {' '}堆空间，不会尝试使用超过{' '}
             <Blob className="max-memory" />
             <strong> {NumberUtils.formatBytes(maxMemory)}</strong>
           </p>

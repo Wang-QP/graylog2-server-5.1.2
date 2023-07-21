@@ -95,7 +95,7 @@ const EditEventDefinitionPage = () => {
       <EventsPageNavigation />
       <PageHeader title={`Edit "${eventDefinition.title}" Event Definition`}
                   documentationLink={{
-                    title: 'Alerts documentation',
+                    title: '警报的文档',
                     path: DocsHelper.PAGES.ALERTS,
                   }}>
         <span>

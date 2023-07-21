@@ -63,7 +63,7 @@ const FieldComponent = ({ groupingIndex }: Props) => {
 
   return (
     <Input id="group-by-field-select"
-           label="Fields"
+           label="字段"
            labelClassName="col-sm-3"
            error={(errors?.groupBy?.groupings?.[groupingIndex] as GroupByError)?.fields}
            wrapperClassName="col-sm-9">

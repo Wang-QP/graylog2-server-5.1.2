@@ -105,7 +105,7 @@ class RuleHelper extends React.Component {
                     <th>Parameter</th>
                     <th>Type</th>
                     <th>Required</th>
-                    <th>Description</th>
+                    <th>描述</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -223,7 +223,7 @@ class RuleHelper extends React.Component {
                           <thead>
                             <tr>
                               <th>Function</th>
-                              <th>Description</th>
+                              <th>描述</th>
                             </tr>
                           </thead>
                           {this._renderFunctions(pagedEntries)}

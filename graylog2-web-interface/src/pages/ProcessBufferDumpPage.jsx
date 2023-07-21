@@ -64,7 +64,7 @@ const ProcessBufferDumpPage = createReactClass({
       <span>
         Process-buffer dump of node {node.short_node_id} / {node.hostname}
         &nbsp;
-        <small>Taken at <Timestamp dateTime={new Date()} /> </small>
+        <small>在 at <Timestamp dateTime={new Date()} /> </small>
       </span>
     );
 

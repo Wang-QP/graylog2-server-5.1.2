@@ -276,7 +276,7 @@ class EditExtractor extends React.Component {
                                               exampleMessage={exampleMessage} />
 
                   <Input id="condition-type"
-                         label="Condition"
+                         label="条件"
                          labelClassName="col-md-2"
                          wrapperClassName="col-md-10"
                          help={conditionTypeHelpMessage}>

@@ -60,7 +60,7 @@ const InputListItem = createReactClass({
     });
 
     // eslint-disable-next-line no-alert
-    if (window.confirm(`Do you really want to delete input '${this.props.input.title}'?`)) {
+    if (window.confirm(`您真的要删除输入'${this.props.input.title}'吗?`)) {
       InputsActions.delete(this.props.input);
     }
   },
@@ -112,7 +112,7 @@ const InputListItem = createReactClass({
               app_action_value: 'show-received-messages',
             });
           }}>
-            Show received messages
+            显示收到的消息
           </Button>
         </LinkContainer>,
       );
@@ -136,7 +136,7 @@ const InputListItem = createReactClass({
                 app_action_value: 'manage-extractors',
               });
             }}>
-              Manage extractors
+              管理提取器
             </Button>
           </LinkContainer>,
         );
@@ -157,7 +157,7 @@ const InputListItem = createReactClass({
                         app_action_value: 'show-metrics',
                       });
                     }}>
-            Show metrics
+            显示指标
           </MenuItem>
         </LinkContainer>
       );
@@ -165,22 +165,21 @@ const InputListItem = createReactClass({
 
     actions.push(
       <DropdownButton key={`more-actions-${this.props.input.id}`}
-                      title="More actions"
+                      title="更多操作"
                       id={`more-actions-dropdown-${this.props.input.id}`}
                       pullRight>
         <IfPermitted permissions={`inputs:edit:${this.props.input.id}`}>
           <MenuItem key={`edit-input-${this.props.input.id}`}
                     onSelect={this._editInput}
                     disabled={definition === undefined}>
-            Edit input
+            编辑输入
           </MenuItem>
         </IfPermitted>
 
         {showMetricsMenuItem}
 
         <IfPermitted permissions={`inputs:edit:${this.props.input.id}`}>
-          <MenuItem key={`add-static-field-${this.props.input.id}`} onSelect={this._openStaticFieldForm}>Add static
-            field
+          <MenuItem key={`add-static-field-${this.props.input.id}`} onSelect={this._openStaticFieldForm}>添加静态场
           </MenuItem>
         </IfPermitted>
 
@@ -188,7 +187,7 @@ const InputListItem = createReactClass({
           <MenuItem key={`divider-${this.props.input.id}`} divider />
         </IfPermitted>
         <IfPermitted permissions="inputs:terminate">
-          <MenuItem key={`delete-input-${this.props.input.id}`} onSelect={this._deleteInput}>Delete input</MenuItem>
+          <MenuItem key={`delete-input-${this.props.input.id}`} onSelect={this._deleteInput}>删除输入</MenuItem>
         </IfPermitted>
       </DropdownButton>,
     );
@@ -198,7 +197,7 @@ const InputListItem = createReactClass({
     if (!this.props.input.global && this.props.input.node) {
       subtitle = (
         <span>
-          On node{' '}<LinkToNode nodeId={this.props.input.node} />
+          在节点{' '}<LinkToNode nodeId={this.props.input.node} />
         </span>
       );
     }
@@ -212,7 +211,7 @@ const InputListItem = createReactClass({
                    globalValue={input.global}
                    nodeValue={input.node}
                    configFields={definition.requested_configuration}
-                   title={`Editing Input ${input.title}`}
+                   title={`编辑输入 ${input.title}`}
                    titleValue={input.title}
                    typeName={input.type}
                    includeTitleField

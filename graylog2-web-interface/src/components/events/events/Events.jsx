@@ -31,7 +31,7 @@ import { isPermitted } from 'util/PermissionsMixin';
 import EventsSearchBar from './EventsSearchBar';
 import EventDetails from './EventDetails';
 
-const HEADERS = ['Description', 'Key', 'Type', 'Event Definition', 'Timestamp'];
+const HEADERS = ['描述', '主键', '类型', '事件定义', '时间戳'];
 
 const ExpandedTR = styled.tr(({ theme }) => css`
   > td {
@@ -202,7 +202,7 @@ class Events extends React.Component {
             {event.message}
           </td>
           <td>{event.key || <em>none</em>}</td>
-          <td>{event.alert ? <Label bsStyle="warning">Alert</Label> : <Label bsStyle="info">Event</Label>}</td>
+          <td>{event.alert ? <Label bsStyle="warning">警报</Label> : <Label bsStyle="info">事件</Label>}</td>
           <td>
             {this.renderLinkToEventDefinition(event, eventDefinitionContext)}
           </td>
@@ -240,16 +240,16 @@ class Events extends React.Component {
     }
 
     const { query, filter: { alerts: filter } } = parameters;
-    const excludedFile = filter === 'exclude' ? 'Events' : 'Alerts & Events';
-    const entity = (filter === 'only' ? 'Alerts' : excludedFile);
+    const excludedFile = filter === 'exclude' ? '事件' : '警报和事件';
+    const entity = (filter === 'only' ? '警报' : excludedFile);
 
     const emptyListComponent = query ? (
       <NoSearchResult>
-        No {entity} found for the current search criteria.
+        没有 {entity} 符合当前搜索条件。
       </NoSearchResult>
     ) : (
       <NoEntitiesExist>
-        No {entity} exist.
+        没有 {entity} 存在。
       </NoEntitiesExist>
     );
 

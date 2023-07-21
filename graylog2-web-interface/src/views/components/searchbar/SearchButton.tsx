@@ -66,7 +66,7 @@ const onButtonClick = (e: MouseEvent, disabled: Boolean, triggerTelemetry: () =>
 const SearchButton = ({ dirty, disabled, glyph, displaySpinner }: Props) => {
   const sendTelemetry = useSendTelemetry();
   const className = disabled ? 'disabled' : '';
-  const title = dirty ? 'Perform search (changes were made after last search execution)' : 'Perform Search';
+  const title = dirty ? '执行搜索(在上次搜索执行之后进行的更改)' : '执行搜索';
 
   const triggerTelemetry = () => {
     sendTelemetry('click', {

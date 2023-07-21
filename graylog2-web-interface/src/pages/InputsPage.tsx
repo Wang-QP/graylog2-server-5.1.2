@@ -38,14 +38,14 @@ const InputsPage = () => {
   }, []);
 
   return (
-    <DocumentTitle title="Inputs">
+    <DocumentTitle title="输入">
       <div>
-        <PageHeader title="Inputs">
+        <PageHeader title="输入">
           {isCloud
             ? (
               <>
-                <p> Graylog cloud accepts data via inputs. There are many types of inputs to choose from, but only some
-                  can run directly in the cloud. You can launch and terminate them on this page.
+                <p> Graylog云通过输入接收数据。有许多类型的输入可供选择，但只有一些
+                  可以直接在云端运行。您可以在此页启动和终止它们。
                 </p>
                 <p>
                   If you are missing an input type on this page&apos;s list of available inputs, you can start the input
@@ -53,7 +53,7 @@ const InputsPage = () => {
                 </p>
               </>
             )
-            : <span>Graylog nodes accept data via inputs. Launch or terminate as many inputs as you want here.</span>}
+            : <span>Graylog节点通过输入接受数据。启动或终止任意多的输入。</span>}
         </PageHeader>
         <InputsList permissions={currentUser.permissions} />
       </div>

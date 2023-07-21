@@ -252,7 +252,7 @@ const EntityDataTable = <Entity extends EntityBase>({
           )}
         </div>
         <LayoutConfigRow>
-          Show
+          显示
           <ButtonGroup>
             {displayPageSizeSelect && (
               <PageSizeSelect pageSize={pageSize} showLabel={false} onChange={onPageSizeChange} />

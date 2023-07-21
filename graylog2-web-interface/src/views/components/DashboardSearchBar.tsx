@@ -168,7 +168,7 @@ const DashboardSearchBar = () => {
                                     {(customCommands) => (
                                       <QueryInput value={value}
                                                   timeRange={values?.timerange}
-                                                  placeholder="Apply filter to all widgets"
+                                                  placeholder="对所有小部件应用过滤器"
                                                   name={name}
                                                   onChange={onChange}
                                                   disableExecution={disableSearchSubmit}

@@ -204,7 +204,7 @@ const SearchBar = ({ onSubmit = defaultProps.onSubmit }: Props) => {
                                                     streams={values.streams}
                                                     name={name}
                                                     onChange={onChange}
-                                                    placeholder='Type your search query here and press enter. E.g.: ("not found" AND http) OR http_response_code:[400 TO 404]'
+                                                    placeholder='输入需要查询的内容并按enter，支持表达式。例如: ("not found" AND http) 或者 http_response_code:[400 TO 404]'
                                                     error={error}
                                                     isValidating={isValidating}
                                                     warning={warnings.queryString}

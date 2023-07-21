@@ -68,7 +68,7 @@ const DataAdapter = ({ dataAdapter }: Props) => {
         </h2>
         <ConfigSummaryDefinitionListWrapper>
           <dl>
-            <dt>Description</dt>
+            <dt>描述</dt>
             <dd>{adapterDescription || <em>No description.</em>}</dd>
           </dl>
         </ConfigSummaryDefinitionListWrapper>

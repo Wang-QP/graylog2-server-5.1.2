@@ -74,7 +74,7 @@ const DashboardActions = ({ dashboard, refetchDashboards }: Props) => {
                    entityId={dashboard.id}
                    entityType="dashboard"
                    onClick={() => setShowShareModal(true)} />
-      <OverlayDropdownButton bsSize="xsmall" title="More" buttonTitle="More actions">
+      <OverlayDropdownButton bsSize="xsmall" title="更多" buttonTitle="More actions">
         {dashboardActions.length > 0 ? (
           <>
             {dashboardActions}

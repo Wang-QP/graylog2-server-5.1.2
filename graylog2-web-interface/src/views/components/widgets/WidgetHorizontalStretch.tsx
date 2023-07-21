@@ -66,7 +66,7 @@ const WidgetHorizontalStretch = ({ onStretch, position, widgetId, widgetType }: 
   const { width } = position;
   const stretched = width === Infinity;
   const icon = stretched ? 'compress' : 'arrows-alt-h';
-  const title = stretched ? 'Compress width' : 'Stretch width';
+  const title = stretched ? '压缩' : '拉伸';
 
   return (
     <IconButton onClick={onClick} name={icon} title={title} />

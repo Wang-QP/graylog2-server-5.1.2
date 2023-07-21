@@ -58,7 +58,7 @@ class CommonNotificationSummary extends React.Component {
             <Table condensed hover className={styles.fixedTable}>
               <tbody>
                 <tr>
-                  <td>Description</td>
+                  <td>描述</td>
                   <td>{notification.description || 'No description given'}</td>
                 </tr>
                 {children}

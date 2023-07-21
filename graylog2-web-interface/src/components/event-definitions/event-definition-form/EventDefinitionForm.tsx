@@ -101,7 +101,7 @@ const EventDefinitionForm = ({
       return (
         <ModalSubmit onCancel={onCancel}
                      onSubmit={handleSubmit}
-                     submitButtonText={`${eventDefinition.id ? 'Update' : 'Create'} event definition`} />
+                     submitButtonText={`${eventDefinition.id ? '更新' : '创建'} event definition`} />
       );
     }
 
@@ -151,7 +151,7 @@ const EventDefinitionForm = ({
     },
     {
       key: STEP_KEYS[2],
-      title: 'Fields',
+      title: '字段',
       component: <FieldsForm {...defaultStepProps} />,
     },
     {

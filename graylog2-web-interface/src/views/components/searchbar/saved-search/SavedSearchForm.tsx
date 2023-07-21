@@ -57,7 +57,7 @@ const SavedSearchForm = (props: Props) => {
 
   const trimmedTitle = (title ?? '').trim();
   const disableSaveAs = trimmedTitle === '' || (!isCreateNew && trimmedTitle === value);
-  const createNewTitle = isCreateNew ? 'Create new' : 'Save as';
+  const createNewTitle = isCreateNew ? '新建' : '另存为';
   const pluggableSaveViewControls = useSaveViewFormControls();
   const _saveSearch = useCallback(() => saveSearch(title), [saveSearch, title]);
   const _saveAsSearch = useCallback(() => saveAsSearch(title), [saveAsSearch, title]);
@@ -101,7 +101,7 @@ const SavedSearchForm = (props: Props) => {
               <Button className={styles.button}
                       onClick={toggleModal}
                       bsSize="sm">
-                Cancel
+                取消
               </Button>
             </ButtonToolbar>
           </StyledForm>

@@ -27,7 +27,7 @@ type Props = {
 
 const LoadingPage = ({ text }: Props) => {
   return (
-    <DocumentTitle title="Loading...">
+    <DocumentTitle title="加载中...">
       <LoginChrome>
         <Spinner text={text} delay={0} />
       </LoginChrome>

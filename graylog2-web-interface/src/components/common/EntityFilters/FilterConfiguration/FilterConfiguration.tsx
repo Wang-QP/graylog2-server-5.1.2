@@ -44,7 +44,7 @@ export const FilterConfiguration = ({
   onSubmit,
 }: Props) => (
   <>
-    <MenuItem header>{filter ? 'Edit' : 'Create'} {attribute.title.toLowerCase()} filter</MenuItem>
+    <MenuItem header>{filter ? '编辑' : '创建'} {attribute.title.toLowerCase()} 过滤器</MenuItem>
     {isAttributeWithFilterOptions(attribute) && (
       <StaticOptionsList attribute={attribute}
                          filterValueRenderer={filterValueRenderer}

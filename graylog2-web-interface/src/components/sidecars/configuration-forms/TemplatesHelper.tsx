@@ -29,7 +29,7 @@ const TemplatesHelper = () => {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Description</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>

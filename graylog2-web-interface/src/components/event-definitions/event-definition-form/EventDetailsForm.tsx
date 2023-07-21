@@ -73,7 +73,7 @@ const EventDetailsForm = ({ eventDefinition, validation, onChange }: Props) => {
 
           <Input id="event-definition-description"
                  name="description"
-                 label={<span>Description <small className="text-muted">(Optional)</small></span>}
+                 label={<span>描述 <small className="text-muted">(Optional)</small></span>}
                  type="textarea"
                  help="Longer description for this Event Definition."
                  value={eventDefinition.description}
@@ -82,7 +82,7 @@ const EventDetailsForm = ({ eventDefinition, validation, onChange }: Props) => {
                  rows={2} />
 
           <FormGroup controlId="event-definition-priority">
-            <ControlLabel>Priority</ControlLabel>
+            <ControlLabel>优先级</ControlLabel>
             <Select options={priorityOptions}
                     value={toString(eventDefinition.priority)}
                     onChange={handlePriorityChange}

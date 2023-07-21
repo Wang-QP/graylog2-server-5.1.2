@@ -288,11 +288,11 @@ const TimeRangeDropdown = ({
 
   const title = (
     <PopoverTitle>
-      <span>Search Time Range</span>
+      <span>搜索时间范围</span>
       {limitDuration > 0 && (
         <LimitLabel>
           <Icon name="exclamation-triangle" />
-          <span>Admin has limited searching to {moment.duration(-limitDuration, 'seconds').humanize(true)}</span>
+          <span>管理员的搜索限制为 {moment.duration(-limitDuration, 'seconds').humanize(true)}</span>
         </LimitLabel>
       )}
     </PopoverTitle>
@@ -340,13 +340,13 @@ const TimeRangeDropdown = ({
 
                 <Row className="row-sm">
                   <Col md={6}>
-                    <Timezone>All timezones using: <b>{userTimezone}</b></Timezone>
+                    <Timezone>所有时区使用: <b>{userTimezone}</b></Timezone>
                   </Col>
                   <Col md={6}>
-                    <ModalSubmit leftCol={noOverride && <Button bsStyle="link" onClick={handleNoOverride}>No Override</Button>}
+                    <ModalSubmit leftCol={noOverride && <Button bsStyle="link" onClick={handleNoOverride}>无覆写</Button>}
                                  onCancel={handleCancel}
                                  disabledSubmit={!isValid || validatingKeyword}
-                                 submitButtonText="Update time range" />
+                                 submitButtonText="更新时间范围" />
                   </Col>
                 </Row>
               </Form>

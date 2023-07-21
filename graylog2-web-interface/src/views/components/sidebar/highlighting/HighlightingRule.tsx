@@ -122,8 +122,8 @@ const HighlightingRule = ({ rule }: Props) => {
           <strong>{field}</strong> {ConditionLabelMap[condition]} <i>&quot;{String(value)}&quot;</i>.
         </RuleContainer>
         <ButtonContainer>
-          <IconButton title="Edit this Highlighting Rule" name="edit" onClick={() => setShowForm(true)} />
-          <IconButton title="Remove this Highlighting Rule" name="trash-alt" onClick={_onDelete} />
+          <IconButton title="编辑此高亮显示规则" name="edit" onClick={() => setShowForm(true)} />
+          <IconButton title="删除此高亮显示规则" name="trash-alt" onClick={_onDelete} />
         </ButtonContainer>
       </HighlightingRuleGrid>
       {showForm && <HighlightForm onClose={() => setShowForm(false)} rule={rule} />}

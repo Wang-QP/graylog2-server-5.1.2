@@ -128,7 +128,7 @@ const validateDateGrouping = (grouping: DateGrouping): GroupByError => {
   const groupByError = {} as GroupByError;
 
   if (!grouping.fields?.length) {
-    groupByError.fields = 'Field is required.';
+    groupByError.fields = '字段是必填的。';
   }
 
   if (grouping.interval.type === 'auto') {
@@ -158,7 +158,7 @@ const validateValuesGrouping = (grouping: ValuesGrouping): GroupByError => {
   const groupByError: GroupByError = {};
 
   if (!grouping.fields?.length) {
-    groupByError.fields = 'Field is required.';
+    groupByError.fields = '字段是必填的。';
   }
 
   const parsedLimit = parseNumber(grouping.limit);

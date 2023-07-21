@@ -102,7 +102,7 @@ const EntityFilters = ({ attributes = [], filterValueRenderers, urlQueryFilters,
   return (
     <>
       <FilterCreation>
-        Filters
+        过滤
         <CreateFilterDropdown filterableAttributes={filterableAttributes}
                               onCreateFilter={onCreateFilter}
                               activeFilters={activeFilters}

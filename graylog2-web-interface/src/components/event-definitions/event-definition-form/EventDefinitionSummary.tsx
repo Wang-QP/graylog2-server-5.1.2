@@ -70,7 +70,7 @@ const EventDefinitionSummary = ({ eventDefinition, notifications, validation, cu
         <dl>
           <dt>Title</dt>
           <dd>{eventDefinition.title || 'No title given'}</dd>
-          <dt>Description</dt>
+          <dt>描述</dt>
           <dd>{eventDefinition.description || 'No description given'}</dd>
           <dt>Priority</dt>
           <dd>{upperFirst(EventDefinitionPriorityEnum.properties[eventDefinition.priority].name)}</dd>
@@ -142,7 +142,7 @@ const EventDefinitionSummary = ({ eventDefinition, notifications, validation, cu
 
     return (
       <>
-        <h3 className={commonStyles.title}>Fields</h3>
+        <h3 className={commonStyles.title}>字段</h3>
         {fieldNames.length === 0
           ? <p>No Fields configured for Events based on this Definition.</p>
           : renderFieldList(fieldNames, fields, keys)}

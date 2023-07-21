@@ -35,8 +35,8 @@ const SORT_DIRECTIONS = {
 } as const;
 
 const SORT_ORDER_NAMES = {
-  asc: 'ascending',
-  desc: 'descending',
+  asc: '升序',
+  desc: '降序',
 };
 
 const SortIcon = ({
@@ -50,7 +50,7 @@ const SortIcon = ({
 }) => {
   const columnSortIsActive = activeSort?.attributeId === column.id;
   const nextSortDirection = !columnSortIsActive || activeSort.direction === SORT_DIRECTIONS.DESC ? SORT_DIRECTIONS.ASC : SORT_DIRECTIONS.DESC;
-  const title = `Sort ${column.title.toLowerCase()} ${SORT_ORDER_NAMES[nextSortDirection]}`;
+  const title = `按 ${column.title.toLowerCase()} ${SORT_ORDER_NAMES[nextSortDirection]}`;
 
   const _onChange = () => {
     onChange({ attributeId: column.id, direction: nextSortDirection });

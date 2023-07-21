@@ -41,14 +41,14 @@ export type SidebarSection = {
 const sidebarSections: Array<SidebarSection> = [
   {
     key: 'viewDescription',
-    title: 'Description',
+    title: '描述',
     icon: 'info',
     content: ({ results }: SidebarSectionProps) => <ViewDescription results={results} />,
   },
   {
     key: 'create',
     icon: 'plus',
-    title: 'Create',
+    title: '创建',
     content: ({ toggleSidebar, sidebarIsPinned }: SidebarSectionProps) => (
       <AddWidgetButton onClick={!sidebarIsPinned ? toggleSidebar : () => {}} />
     ),
@@ -56,13 +56,13 @@ const sidebarSections: Array<SidebarSection> = [
   {
     key: 'highlighting',
     icon: 'paragraph',
-    title: 'Highlighting',
+    title: '高亮显示',
     content: () => <HighlightingRules />,
   },
   {
     key: 'fieldList',
     icon: 'subscript',
-    title: 'Fields',
+    title: '字段',
     content: ({ sidebarChildren }: SidebarSectionProps) => sidebarChildren,
   },
 ];

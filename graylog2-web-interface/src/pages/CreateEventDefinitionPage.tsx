@@ -52,7 +52,7 @@ const CreateEventDefinitionPage = () => {
 
       <PageHeader title={pageTitle}
                   documentationLink={{
-                    title: 'Alerts documentation',
+                    title: '警报的文档',
                     path: DocsHelper.PAGES.ALERTS,
                   }}>
         <span>

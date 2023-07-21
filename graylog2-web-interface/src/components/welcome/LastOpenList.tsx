@@ -36,7 +36,7 @@ const LastOpenList = () => {
         You do not have opened any searches/dashboards yet.
         <br />
         From now on, whenever you open a saved search/dashboard, it will show up here.
-        In the meantime, you can start a new <Link to={Routes.SEARCH}>Search</Link> or <Link to={Routes.pluginRoute('DASHBOARDS_NEW')}>Dashboard</Link>.
+        In the meantime, you can start a new <Link to={Routes.SEARCH}>Search</Link> or <Link to={Routes.pluginRoute('DASHBOARDS_NEW')}>仪表板</Link>.
       </NoSearchResult>
     );
   }

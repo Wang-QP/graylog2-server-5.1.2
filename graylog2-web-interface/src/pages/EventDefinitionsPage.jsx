@@ -26,22 +26,22 @@ import EventsPageNavigation from 'components/events/EventsPageNavigation';
 
 const EventDefinitionsPage = () => {
   return (
-    <DocumentTitle title="Event Definitions">
+    <DocumentTitle title="事件定义">
       <EventsPageNavigation />
-      <PageHeader title="Event Definitions"
+      <PageHeader title="事件定义"
                   actions={(
                     <IfPermitted permissions="eventdefinitions:create">
                       <LinkContainer to={Routes.ALERTS.DEFINITIONS.CREATE}>
-                        <Button bsStyle="success">Create event definition</Button>
+                        <Button bsStyle="success">创建事件定义</Button>
                       </LinkContainer>
                     </IfPermitted>
                   )}
                   documentationLink={{
-                    title: 'Alerts documentation',
+                    title: '警报的文档',
                     path: DocsHelper.PAGES.ALERTS,
                   }}>
         <span>
-          Create new Event Definitions that will allow you to search for different Conditions and alert on them.
+          创建新的事件定义，使您能够搜索不同的条件并对它们发出警报。
         </span>
       </PageHeader>
 

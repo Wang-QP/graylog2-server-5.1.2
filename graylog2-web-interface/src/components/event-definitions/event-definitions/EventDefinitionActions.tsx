@@ -179,7 +179,7 @@ const EventDefinitionActions = ({ eventDefinition, refetchEventDefinitions }: Pr
                      entityType="event_definition"
                      onClick={() => setShowEntityShareModal(true)}
                      bsSize="xsmall" />
-        <OverlayDropdownButton title="More"
+        <OverlayDropdownButton title="更多"
                                bsSize="xsmall"
                                dropdownZIndex={1000}>
           {showActions() && (
@@ -235,7 +235,7 @@ const EventDefinitionActions = ({ eventDefinition, refetchEventDefinitions }: Pr
       {showEntityShareModal && (
         <EntityShareModal entityId={eventDefinition.id}
                           entityType="event_definition"
-                          entityTypeTitle="event definition"
+                          entityTypeTitle="事件定义"
                           entityTitle={eventDefinition.title}
                           description="Search for a User or Team to add as collaborator on this event definition."
                           onClose={() => setShowEntityShareModal(false)} />

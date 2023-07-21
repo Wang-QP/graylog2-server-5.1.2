@@ -89,7 +89,7 @@ class EditEventDefinitionPage extends React.Component {
         <PageHeader title={`Edit "${notification.title}" Notification`}
                     actions={<EventNotificationActionLinks notificationId={notification.id} />}
                     documentationLink={{
-                      title: 'Alerts documentation',
+                      title: '警报的文档',
                       path: DocsHelper.PAGES.ALERTS,
                     }}>
           <span>

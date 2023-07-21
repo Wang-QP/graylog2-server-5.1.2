@@ -57,16 +57,16 @@ const ThreadDumpPage = createReactClass({
 
     const title = (
       <span>
-        Thread dump of node {this.state.node.short_node_id} / {this.state.node.hostname}
+        {this.state.node.short_node_id} / {this.state.node.hostname}节点的线程转储
         &nbsp;
-        <small>Taken at <Timestamp dateTime={new Date()} /></small>
+        <small>在 at <Timestamp dateTime={new Date()} /></small>
       </span>
     );
 
     const threadDump = this.state.threadDump ? <pre className="threaddump">{this.state.threadDump}</pre> : <Spinner />;
 
     return (
-      <DocumentTitle title={`Thread dump of node ${this.state.node.short_node_id} / ${this.state.node.hostname}`}>
+      <DocumentTitle title={`${this.state.node.short_node_id} / ${this.state.node.hostname}节点的线程转储`}>
         <div>
           <PageHeader title={title} />
           <Row className="content">

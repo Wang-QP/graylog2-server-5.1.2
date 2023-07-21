@@ -213,7 +213,7 @@ const WidgetActionsMenu = ({
         </IfDashboard>
         {isFocused && (
           <IconButton name="compress-arrows-alt"
-                      title="Un-focus widget"
+                      title="压缩"
                       onClick={unsetWidgetFocusing} />
         )}
         {!isFocused && (
@@ -223,28 +223,28 @@ const WidgetActionsMenu = ({
                                      onStretch={onPositionsChange}
                                      position={position} />
             <IconButton name="expand-arrows-alt"
-                        title="Focus this widget"
+                        title="放大"
                         onClick={focusWidget} />
           </>
         )}
 
         <IconButton name="edit"
-                    title="Edit"
+                    title="编辑"
                     onClick={toggleEdit} />
 
         <WidgetActionDropdown>
           <MenuItem onSelect={onDuplicate}>
-            Duplicate
+            复制
           </MenuItem>
           <IfSearch>
             <MenuItem onSelect={() => setShowCopyToDashboard(true)}>
-              Copy to Dashboard
+              复制到仪表板
             </MenuItem>
           </IfSearch>
           {widget.isExportable && <MenuItem onSelect={() => setShowExport(true)}>Export</MenuItem>}
           <IfDashboard>
             <MenuItem onSelect={() => setShowMoveWidgetToTab(true)}>
-              Move to Page
+              移动到页面
             </MenuItem>
           </IfDashboard>
           <ExtraWidgetActions widget={widget}
@@ -252,7 +252,7 @@ const WidgetActionsMenu = ({
                               }} />
           <MenuItem divider />
           <MenuItem onSelect={onDelete}>
-            Delete
+            删除
           </MenuItem>
         </WidgetActionDropdown>
 

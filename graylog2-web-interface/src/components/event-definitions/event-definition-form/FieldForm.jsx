@@ -274,8 +274,8 @@ class FieldForm extends React.Component {
 
         <Col md={12}>
           <ButtonToolbar>
-            <Button bsStyle="primary" onClick={this.handleSubmit}>Done</Button>
-            <Button onClick={onCancel}>Cancel</Button>
+            <Button bsStyle="primary" onClick={this.handleSubmit}>完成</Button>
+            <Button onClick={onCancel}>取消</Button>
           </ButtonToolbar>
         </Col>
       </Row>

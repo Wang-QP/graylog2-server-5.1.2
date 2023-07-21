@@ -32,12 +32,12 @@ const BulkActionsDropdown = ({ selectedEntities, setSelectedEntities, children }
 
   return (
     <DropdownButton bsSize="small"
-                    title="Bulk actions"
+                    title="批量操作"
                     id="bulk-actions-dropdown"
                     disabled={!selectedEntities?.length}>
       {children}
       <MenuItem divider />
-      <MenuItem onClick={cancelEntitySelection}>Cancel selection</MenuItem>
+      <MenuItem onClick={cancelEntitySelection}>取消选择</MenuItem>
     </DropdownButton>
   );
 };

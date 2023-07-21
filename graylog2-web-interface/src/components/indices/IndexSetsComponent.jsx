@@ -104,7 +104,7 @@ const IndexSetsComponent = createReactClass({
         <LinkContainer to={Routes.SYSTEM.INDEX_SETS.CONFIGURATION(indexSet.id)}>
           <Button>Edit</Button>
         </LinkContainer>
-        <DropdownButton title="More Actions" id={`index-set-dropdown-${indexSet.id}`} pullRight>
+        <DropdownButton title="更多操作" id={`index-set-dropdown-${indexSet.id}`} pullRight>
           <MenuItem onSelect={this._onSetDefault(indexSet)}
                     disabled={!indexSet.can_be_default || indexSet.default}>Set as default
           </MenuItem>

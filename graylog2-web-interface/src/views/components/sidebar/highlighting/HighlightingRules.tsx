@@ -35,15 +35,15 @@ const HighlightingRules = () => {
   return (
     <>
       <SectionInfo>
-        Search terms and field values can be highlighted. Highlighting your search query in the results can be enabled/disabled in the graylog server config.
-        Any field value can be highlighted by clicking on the value and selecting &quot;Highlight this value&quot;.
-        If a term or a value has more than one rule, the last matching rule is used.
+        可以突出显示搜索词和字段值。在结果中突出显示您的搜索查询可以在graylog服务器配置中启用/禁用。
+        任何字段值都可以通过单击该值并选择来突出显示&quot;该高亮值&quot;。
+        如果一个词或值有多个规则，则使用最后一个匹配的规则。
       </SectionInfo>
-      <SectionSubheadline>Active highlights <IconButton className="pull-right" name="plus" onClick={() => setShowForm(!showForm)} /> </SectionSubheadline>
+      <SectionSubheadline>活跃亮点 <IconButton className="pull-right" name="plus" onClick={() => setShowForm(!showForm)} /> </SectionSubheadline>
       {showForm && <HighlightForm onClose={() => setShowForm(false)} />}
       <HighlightingRuleGrid>
         <ColorPreview color={DEFAULT_HIGHLIGHT_COLOR} />
-        <RuleContainer>Search terms</RuleContainer>
+        <RuleContainer>搜索词</RuleContainer>
       </HighlightingRuleGrid>
       {rules.map((rule) => <HighlightingRule key={`${rule.field}-${rule.value}-${rule.color}-${rule.condition}`} rule={rule} />)}
     </>

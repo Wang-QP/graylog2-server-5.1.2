@@ -132,7 +132,7 @@ class EventDefinitionDescription extends React.Component {
       <Row>
         <Col md={6}>
           <DetailsList>
-            <DetailTitle>Status:</DetailTitle>
+            <DetailTitle>状态:</DetailTitle>
             <DetailValue>{scheduleCtx.status}</DetailValue>
             {scheduleCtx.triggered_at && (
               <>

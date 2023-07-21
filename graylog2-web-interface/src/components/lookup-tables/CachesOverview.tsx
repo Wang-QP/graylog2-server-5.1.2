@@ -50,7 +50,7 @@ const buildHelpPopover = () => (
       <thead>
         <tr>
           <th>Field</th>
-          <th>Description</th>
+          <th>描述</th>
         </tr>
       </thead>
       <tbody>
@@ -177,7 +177,7 @@ const CachesOverview = ({ caches, pagination, paginationQueryParameter }: Props)
               <thead>
                 <tr>
                   <th className={Styles.rowTitle}>Title</th>
-                  <th className={Styles.rowDescription}>Description</th>
+                  <th className={Styles.rowDescription}>描述</th>
                   <th className={Styles.rowName}>Name</th>
                   <th>Entries</th>
                   <th>Hit rate</th>

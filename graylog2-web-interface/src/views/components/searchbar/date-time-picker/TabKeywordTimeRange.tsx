@@ -136,7 +136,7 @@ const TabKeywordTimeRange = ({ defaultValue, disabled, setValidatingKeyword }: P
                        style={{ marginRight: 5, width: '100%', marginBottom: 0 }}
                        validationState={error ? 'error' : null}>
 
-              <p><strong>Specify the time frame for the search in natural language.</strong></p>
+              <p><strong>以自然语言指定搜索的时间范围。</strong></p>
               <KeywordInput type="text"
                             className="input-sm mousetrap"
                             name={name}
@@ -155,17 +155,17 @@ const TabKeywordTimeRange = ({ defaultValue, disabled, setValidatingKeyword }: P
       <Col sm={7}>
         <Panel>
           <Panel.Body>
-            <p><code>last month</code> searches between one month ago and now</p>
+            <p><code>last month</code> 一个月前到现在的搜索</p>
 
-            <p><code>4 hours ago</code> searches between four hours ago and now</p>
+            <p><code>4 hours ago</code> 四小时前到现在的搜索</p>
 
-            <p><code>1st of april to 2 days ago</code> searches between 1st of April and 2 days ago</p>
+            <p><code>1st of april to 2 days ago</code> 四月一日到两天前的搜索记录</p>
 
-            <p><code>yesterday midnight +0200 to today midnight +0200</code> searches between yesterday midnight and today midnight in timezone +0200 - will be 22:00 in UTC</p>
+            <p><code>yesterday midnight +0200 to today midnight +0200</code> 在昨天午夜到今天午夜(时区+0200 -)在utc时间是22:00之间的搜索</p>
 
-            <p>Please consult the <DocumentationLink page={DocsHelper.PAGES.TIME_FRAME_SELECTOR}
-                                                     title="Keyword Time Range Documentation"
-                                                     text="documentation" /> for more details.
+            <p>请参阅 <DocumentationLink page={DocsHelper.PAGES.TIME_FRAME_SELECTOR}
+                                                     title="关键字时间范围文档"
+                                                     text="文档" /> 了解更多详情。
             </p>
           </Panel.Body>
         </Panel>

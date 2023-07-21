@@ -189,7 +189,7 @@ class ContentPackEntitiesList extends React.Component {
             )}
             <Button bsSize="xs"
                     onClick={() => { openShowModal(entity.id); }}>
-              Show
+              显示
             </Button>
           </ButtonToolbar>
         </td>

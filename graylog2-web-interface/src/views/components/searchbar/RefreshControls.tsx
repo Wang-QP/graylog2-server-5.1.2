@@ -41,7 +41,7 @@ const ButtonLabel = ({ refreshConfigEnabled, naturalInterval }: {
   refreshConfigEnabled: boolean,
   naturalInterval: React.ReactNode
 }) => {
-  const buttonText = refreshConfigEnabled ? <>Every {naturalInterval}</> : 'Not updating';
+  const buttonText = refreshConfigEnabled ? <>Every {naturalInterval}</> : '刷新频率';
 
   // eslint-disable-next-line react/jsx-no-useless-fragment
   return <>{buttonText}</>;
@@ -102,7 +102,7 @@ const RefreshControls = () => {
 
   return (
     <FlexibleButtonGroup aria-label="Refresh Search Controls">
-      <Button onClick={_toggleEnable} title={refreshConfig.enabled ? 'Pause Refresh' : 'Start Refresh'}>
+      <Button onClick={_toggleEnable} title={refreshConfig.enabled ? '暂停更新' : '开始刷新'}>
         {refreshConfig.enabled ? <Icon name="pause" /> : <Icon name="play" />}
       </Button>
 

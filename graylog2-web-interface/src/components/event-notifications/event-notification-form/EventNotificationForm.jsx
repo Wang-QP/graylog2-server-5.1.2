@@ -161,7 +161,7 @@ class EventNotificationForm extends React.Component {
 
             <Input id="notification-description"
                    name="description"
-                   label={<span>Description <small className="text-muted">(Optional)</small></span>}
+                   label={<span>描述 <small className="text-muted">(Optional)</small></span>}
                    type="textarea"
                    help="Longer description for this Notification."
                    value={notification.description}
@@ -208,7 +208,7 @@ class EventNotificationForm extends React.Component {
 
             {!embedded && (
               <FormSubmit disabledSubmit={!isSubmitEnabled}
-                          submitButtonText={`${action === 'create' ? 'Create' : 'Update'} notification`}
+                          submitButtonText={`${action === 'create' ? '创建' : '更新'} notification`}
                           onCancel={onCancel} />
             )}
           </form>
